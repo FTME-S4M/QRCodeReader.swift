@@ -33,7 +33,7 @@ public final class ReaderOverlayView: UIView {
     overlay.backgroundColor = UIColor.clear.cgColor
     overlay.fillColor       = UIColor.clear.cgColor
     overlay.strokeColor     = UIColor(red: 190.0/255.0, green: 231.0/255.0, blue: 13.0/255.0, alpha: 1.0).cgColor
-    overlay.lineWidth       = 1
+    overlay.lineWidth       = 3
 
     return overlay
   }()
