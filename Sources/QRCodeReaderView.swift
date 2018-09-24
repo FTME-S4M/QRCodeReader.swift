@@ -65,7 +65,7 @@ final public class QRCodeReaderView: UIView, QRCodeReaderDisplayable {
 
   public lazy var toggleTorchButton: UIButton? = {
     let ttb = ToggleTorchButton()
-
+    ttb.setImage(UIImage(named: "flash"), for: .normal)
     ttb.translatesAutoresizingMaskIntoConstraints = false
 
     return ttb
@@ -105,7 +105,7 @@ final public class QRCodeReaderView: UIView, QRCodeReaderDisplayable {
 
     if showTorchButton {
       addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[ttb(50)]", options: [], metrics: nil, views: views))
-      addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[ttb(70)]", options: [], metrics: nil, views: views))
+      addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[ttb(70)]|", options: [], metrics: nil, views: views))
     }
 
     for attribute in Array<NSLayoutConstraint.Attribute>([.left, .top, .right, .bottom]) {

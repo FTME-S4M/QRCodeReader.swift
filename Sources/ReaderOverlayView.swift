@@ -32,10 +32,8 @@ public final class ReaderOverlayView: UIView {
     var overlay             = CAShapeLayer()
     overlay.backgroundColor = UIColor.clear.cgColor
     overlay.fillColor       = UIColor.clear.cgColor
-    overlay.strokeColor     = UIColor.white.cgColor
-    overlay.lineWidth       = 3
-    overlay.lineDashPattern = [7.0, 7.0]
-    overlay.lineDashPhase   = 0
+    overlay.strokeColor     = UIColor(red: 190.0/255.0, green: 231.0/255.0, blue: 13.0/255.0, alpha: 1.0).cgColor
+    overlay.lineWidth       = 1
 
     return overlay
   }()
